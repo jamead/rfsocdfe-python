@@ -40,10 +40,10 @@ def main():
     trig_pv = epics.PV(bpm_prefix+'Trig:Soft-SP')
 
     # Trigger the BPM
-    #trig_pv.put(1)
-    #print("Triggering BPM...")
-    #time.sleep(1)
-    #print("Waiting for Data ")
+    trig_pv.put(1)
+    print("Triggering BPM...")
+    time.sleep(1)
+    print("Waiting for Data ")
 
 
     #wfmrdy_pv = epics.PV(bpm_prefix+'DMA:Busy-I')
@@ -72,7 +72,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
 
 
